@@ -5,9 +5,13 @@ Usage:
 ```
 $python3 main.py
 Enter a JWT
-Paste in a JWT plz: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NsYWltcyI6eyJwcm92aWRlciI6ImZhY2Vib29rIiwic3ViIjoiMTAxNTUxMzk1ODI2MzgxMzEiLCJlbWFpbCI6ImdlbnpvcmdAZ21haWwuY29tIn0sImp0aSI6ImU0ZDliYWU0LTljMjItNGY4YS1iNDI0LTU5YTQ1MTk0NmJkYyIsImV4cCI6MTUxMDc0MTQ0MSwiZnJlc2giOmZhbHNlLCJpYXQiOjE1MTA3NDA1NDEsInR5cGUiOiJhY2Nlc3MiLCJuYmYiOjE1MTA3NDA1NDEsImlkZW50aXR5Ijp7InByb3ZpZGVyIjoiZmFjZWJvb2siLCJpZCI6IjEwMTU1MTM5NTgyNjM4MTMxIiwiZW1haWwiOiJnZW56b3JnQGdtYWlsLmNvbSJ9fQ.cgAdiXbbp9KhaOgdbFGPCqDSNW01tPaKBL7r4roHvDg
+Paste in a JWT plz: [enter fresh jwt here]
 ```
-Note: JWT in tmp jwt.txt is a random JWT found in pastebin. 
+Use the following format for jwt:
+```
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyLCJleHAiOjE2MzA1MzEzNzB9.VUf5k9sVYyyqCDU1G-EvRJWIc-zGVFhwiCwO8qlagi4
+```
+Note: JWT in tmp jwt.txt generated from jwt.io
 
 ## TODO
 - [] add classes to python files
