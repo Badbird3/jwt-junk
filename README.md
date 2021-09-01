@@ -10,7 +10,7 @@ Paste in a JWT plz: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NsYWltcyI6eyJ
 Note: JWT in tmp jwt.txt is a random JWT found in pastebin. 
 
 ## TODO
-[] add classes to python files
-[] add .gitignore
-[] use std input instead of input
-[] create burp extension
+- [] add classes to python files
+- [] add .gitignore
+- [] use std input instead of input
+- [] create burp extension
