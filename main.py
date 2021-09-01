@@ -3,6 +3,7 @@ import time
 from time import gmtime
 from time import strftime
 
+print("JWT Lifetime Checker v1.0!")
 print ("Enter a JWT")
 my_jwt = input("Paste in a JWT plz: ")
 decoded = jwt.decode(my_jwt, verify=False)
@@ -14,16 +15,19 @@ def converter(jwt_time):
 
 
 print('The expiration time of the inputted JWT is: ')
-print(jwt_time) # int
-#print(type(decoded["exp"]))
+print(converter(jwt_time)) # This is an int
 print("The current time is: ")
-print(converter(time.time())) #none type
-#print(type(int(time.time())))
-print("Age of token in seconds:")
+print(converter(time.time())) # This is a none type
 
-difference = int(time.time()) - (decoded["exp"])
-print(difference)
 
-print(strftime("%H:%M:%S", gmtime(difference))) # print difference in minutes   
-
-#print(int(time.time()) - (decoded["exp"]))
+if int(jwt_time) <= int(time.time()):
+    difference = int(time.time()) - (decoded["exp"])
+    print("The supplied JWT is expired, plz get a fresh JWT and try again.")
+    print("The token expired this many minutes ago: ")
+    print(int(difference) / 60)
+else:
+    fresh_difference =  (decoded["exp"]) - int(time.time())
+    print("The supplied JWT is not expired.")
+    print("The token will expire in this many minutes: ")
+    print(int(fresh_difference) / 60)
+    
