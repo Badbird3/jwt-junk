@@ -27,7 +27,13 @@ if int(jwt_time) <= int(time.time()):
     print(int(difference) / 60)
 else:
     fresh_difference =  (decoded["exp"]) - int(time.time())
-    print("The supplied JWT is not expired.")
-    print("The token will expire in this many minutes: ")
-    print(int(fresh_difference) / 60)
+    divided = int(fresh_difference) / 60
+    if divided >=30:
+        print("The supplied JWT is not expired.")
+        print("The token will expire in this many minutes: ")
+        print("bad")
+    else:
+        print("ok")
+        print(divided)
+    
     
